@@ -113,8 +113,8 @@ const PhaserGame: React.FC<PhaserGameProps> = ({ imageUrl, frameWidth, frameHeig
         <div 
             ref={gameContainerRef} 
             style={{ 
-                width: '800px', 
-                height: '600px', 
+                width: frameWidth *3, 
+                height: frameHeight*3, 
                 margin: '20px auto', 
                 border: '1px solid #ccc',
                 overflow: 'hidden' 

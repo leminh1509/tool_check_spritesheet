@@ -110,8 +110,8 @@ const SpritesheetDemo: React.FC = () => {
                 />
             ) : (
                 <div style={{ 
-                    width: '800px', 
-                    height: '600px', 
+                    width: frameWidth, 
+                    height: frameHeight, 
                     margin: '20px auto', 
                     border: '2px dashed #999',
                     display: 'flex',
