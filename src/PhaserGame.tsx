@@ -79,7 +79,7 @@ const PhaserGame: React.FC<PhaserGameProps> = ({ imageUrl, frameWidth, frameHeig
                 );
 
                 // 3. Chỉnh scale
-                sprite.setScale(3);
+                sprite.setScale(1);
 
                 // 4. Chạy animation
                 sprite.play('walk');
@@ -90,6 +90,12 @@ const PhaserGame: React.FC<PhaserGameProps> = ({ imageUrl, frameWidth, frameHeig
             type: Phaser.AUTO,
             width: 800,
             height: 600,
+            parent : "show",
+            scale: {
+                 mode: Phaser.Scale.FIT,
+            autoCenter: Phaser.Scale.CENTER_BOTH,
+            orientation: Phaser.Scale.LANDSCAPE,
+            },
             backgroundColor: '#2d2d2d',
             parent: gameContainerRef.current,
             scene: DemoScene
@@ -113,8 +119,8 @@ const PhaserGame: React.FC<PhaserGameProps> = ({ imageUrl, frameWidth, frameHeig
         <div 
             ref={gameContainerRef} 
             style={{ 
-                width: frameWidth *3, 
-                height: frameHeight*3, 
+                width: frameWidth , 
+                height: frameHeight, 
                 margin: '20px auto', 
                 border: '1px solid #ccc',
                 overflow: 'hidden' 

@@ -109,7 +109,7 @@ const SpritesheetDemo: React.FC = () => {
                     isReady={isReady}
                 />
             ) : (
-                <div style={{ 
+                <div id='show' style={{ 
                     width: frameWidth, 
                     height: frameHeight, 
                     margin: '20px auto', 
